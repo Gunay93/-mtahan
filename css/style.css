@@ -132,29 +132,37 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focu
     top: 30%;
     box-shadow: 0px 1px 3px 1px #f7f7f7;
     width: 250px;
-    height: 250px;
+    padding: 20px;
     display: flex;
     align-items:center;
     justify-content:center;
-    z-index:999
+    z-index:999;
+    flex-wrap:wrap
+}
+.expired-text {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
 }
 .exam-questions {
-    max-width: 700px;
+    max-width: 900px;
     margin: 20px auto;
 }
 .a-questions li,.b-questions li {
     list-style-type: decimal;
     letter-spacing: 0.2px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    font-size: 14px;
 }
-.timer-number{
+.exam-questions p{font-size: 14px;}
+#timer-number{
     color:#3e3f41;
     font-size:50px;
     font-weight:bold;
     max-width: 155px;
 }
 .expired{font-size:30px}
-.timer-number span{
+#timer-number span{
     color:#fe0000
 }
 .not-allow{cursor: not-allowed !important;}
@@ -163,35 +171,10 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focu
     margin-top:5px
 }
 .variants li{list-style-type: none;display:inline-block;margin-right:20px}
-.variants input:checked {
-    background-color: #abd504;
-    color: #fff;
-}
-.variants input::before {
-    position: absolute;
-    left: 9px;
-    top: 6px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 13px;
-    content: "\f00c";
-}
 .variants input{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
+    margin-right:5px;
     position: relative;
-    background-color: #f1f1f1;
-    color: #666;
-    top: 10px;
-    height: 30px;
-    width: 30px;
-    border: 0;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-right: 7px;
-    outline: none;
+    bottom: -2px;
 }
 .step-next,.submit{
     background-color: #abd504;
@@ -206,7 +189,8 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focu
     transition: .4s ease;
     float: right;
 }
-.submit{float:left}
+.step-prev{float:left}
+.submit{float:right}
 .step-prev{
     background-color: #a2a2a2;
 }
@@ -229,7 +213,12 @@ textarea{width:100%;margin-top:5px}
     color: white !important;
     text-decoration: none !important;
     margin-top: 5px;
-    transition:0.3s all linear
+    transition:0.3s all linear;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius:3px
 }
 .cavabla:hover{background-color:#a0c705}
 #exampleModal,.modal-backdrop{
@@ -247,8 +236,10 @@ textarea{width:100%;margin-top:5px}
     font-size: 22px;
     font-weight: bold;
 }
+textarea{height:500px}
 #exampleModal .modal-dialog {
     height: 100%;
     display: flex;
     align-items: center;
 }
+.variants label{font-size:12px}

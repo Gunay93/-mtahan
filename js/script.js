@@ -8,18 +8,18 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
   var minutes = Math.floor(((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))*60);
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("timer-fixed").innerHTML = "<p class='timer-number'>"+minutes+":"+"<span>"+seconds+"</span></p>";
+  document.getElementById("timer-number").innerHTML = minutes+":"+"<span>"+seconds+"</span>";
 if(seconds < 10){
         seconds = "0" + seconds;
-        document.getElementById("timer-fixed").innerHTML = "<p class='timer-number'>"+minutes+":"+"<span>"+seconds+"</span></p>";
+        document.getElementById("timer-number").innerHTML = minutes+":"+"<span>"+seconds+"</span>";
 }
 if(minutes < 10){
     minutes = "0" + minutes;
-    document.getElementById("timer-fixed").innerHTML = "<p class='timer-number'>"+minutes+":"+"<span>"+seconds+"</span></p>";
+    document.getElementById("timer-number").innerHTML = minutes+":"+"<span>"+seconds+"</span>";
   }
 if (distance < 0) {
   clearInterval(x);
-  document.getElementById("timer-fixed").innerHTML = "<p class='timer-number expired'>Vaxt bitti!</p>";
+  document.getElementById("timer-number").innerHTML = "<span class='expired'>Vaxt bitti!</span>";
   document.getElementById("exampleModal").classList.add('show');
   document.getElementById("modal-backdrop").classList.add('show');
   for (i = 0; i < inputs.length; i++) {
