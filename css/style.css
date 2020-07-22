@@ -137,7 +137,8 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focu
     align-items:center;
     justify-content:center;
     z-index:999;
-    flex-wrap:wrap
+    flex-wrap:wrap;
+    transition:0.5s all ease
 }
 .expired-text {
     font-size: 25px;
@@ -243,3 +244,14 @@ textarea{height:500px}
     align-items: center;
 }
 .variants label{font-size:12px}
+.close-timer {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.leftcl{
+    left:-210px !important;
+    transition:0.5s all ease
+}

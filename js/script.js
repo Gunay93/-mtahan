@@ -40,6 +40,10 @@ if (distance < 0) {
 }, 1000);
 
 $(document).ready(function(){
+  $('.close-timer').click(function(){
+    $(this).toggleClass('fa-times').toggleClass('fa-chevron-right');
+    $('#timer-fixed').toggleClass('leftcl');
+  });
   $('.step-next').click(function(){
     $('.a-questions').addClass('d-none');
     $('.b-questions').removeClass('d-none');
