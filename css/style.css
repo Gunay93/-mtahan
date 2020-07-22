@@ -177,8 +177,8 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focu
     position: relative;
     bottom: -2px;
 }
-.step-next,.submit{
-    background-color: #abd504;
+.submit{
+    background-color: #e91515;
 }
 .step-next,.step-prev,.submit{
     color: #fff;
@@ -192,14 +192,14 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focu
 }
 .step-prev{float:left}
 .submit{float:right}
-.step-prev{
+.step-prev,.step-next{
     background-color: #a2a2a2;
 }
-.step-prev:hover{
+.step-prev:hover,.step-next:hover{
     background-color: #757575;
 }
-.step-next:hover,.submit:hover{
-    background-color: #95b904
+.submit:hover{
+    background-color: #d41414
 }
 .active-line{
     border-top: 2px solid rgb(171, 213, 4)
