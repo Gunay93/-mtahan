@@ -1,5 +1,5 @@
 // 270000001
-var countDownDate = new Date().getTime() + 5000;
+var countDownDate = new Date().getTime() + 60000;
 var x = setInterval(function() {
   var now = new Date().getTime();
   var inputs = document.getElementsByTagName("input");
