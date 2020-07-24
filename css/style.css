@@ -287,4 +287,8 @@ table, th, td {
     padding: 3px !important;
     width: 15%;
     text-align: center;
+    float: right;
+}
+.exam-quest-content p{
+    white-space:nowrap
 }
