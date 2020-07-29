@@ -292,3 +292,7 @@ table, th, td {
 .exam-quest-content p{
     white-space:nowrap
 }
+.exam-quest-content .show-input{
+    border: 1px solid #000000 !important;
+    border-radius: 0;
+}
